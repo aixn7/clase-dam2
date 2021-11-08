@@ -14,6 +14,12 @@ public class Alumno {
         nombre = nombreCompleto;
         numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
+        if (nombreCompleto.length() < 3) {
+            System.out.println ("Longitud de nombre demasiado corta, puede generar errores");
+        }
+        if (numeroMatriculaAlumno.length() < 4) {
+            System.out.println ("Longitud de matrícula demasiado corta, puede generar errores");
+        }
     }
 
     /**
